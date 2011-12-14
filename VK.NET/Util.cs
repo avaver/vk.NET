@@ -28,7 +28,10 @@ namespace VKNet
         {
             var s = new StringBuilder();
             foreach (var i in list)
+            {
                 s.Append(i.Key + "=" + i.Value + separator);
+            }
+
             return s.ToString().Trim(separator);
         }
 
